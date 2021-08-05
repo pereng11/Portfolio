@@ -30,158 +30,244 @@
         <img src="/img/favicon.png" alt="">
         <a href="#">Pereng</a>
       </div>
-      <div class="navBar__menu">
-        <ul class="navBar__menu">
-          <li class="navBar__menu__item">Home</li>
-          <li class="navBar__menu__item">About</li>
-          <li class="navBar__menu__item">Skills</li>
-          <li class="navBar__menu__item">My Work</li>
-          <li class="navBar__menu__item">Testimonial</li>
-          <li class="navBar__menu__item">Contact</li>
-        </ul>
-      </div>
+      <ul class="navBar__menu">
+        <li class="navBar__menu__item">Home</li>
+        <li class="navBar__menu__item">About</li>
+        <li class="navBar__menu__item">Skills</li>
+        <li class="navBar__menu__item">My Work</li>
+        <li class="navBar__menu__item">Testimonial</li>
+        <li class="navBar__menu__item">Contact</li>
+      </ul>
     </nav>
 
-    <!-- header -->
-    <header class="header">
-      <img class="header__image" src="img/favicon.png" alt="navBar Logo"></img>
-      <div class="title">
-        <p>Hello,</p>
-        <p class="subtitle">I'm Dream Coder</p>
-      </div>
-      <div class="description">
-        <span>A Front-end Developer in Seoul</span>
-      </div>
-      <button class="header__button">CONTACT ME</button>
-    </header>
+    <!-- home -->
+    <section class="home">
+      <img class="home__image" src="img/favicon.png" alt="navBar Logo"></img>
+      <h1 class="title">Hello, <br/> I'm Dream Coder</h1>
+      <h2 class="description">A Front-end Developer in Seoul<h2/>
+      <button class="home__button">CONTACT ME</button>
+    </section>
 
     <!-- About Me -->
     <section class="about">
-      <div class="title">
-        <span>About Me</span>
-      </div>
-      <div class="description">
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, accusantium commodi eligendi sint sed corrupti aut quia, rem quo nemo, nihil repellat illo odio iure adipisci at voluptates dicta a?</span>
-      </div>
-      <div class="stack">
+      <h1 class="title">About Me<h1/>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, accusantium commodi eligendi sint sed corrupti aut quia, rem quo nemo, nihil repellat illo odio iure adipisci at voluptates dicta a?
+      </p>
+      <div class="about__stack">
         <div class="stack__item">
-          <i class="far fa-window-restore"></i>
+          <i class="far fa-window-restore stack__image"></i>
           <p class="stack__title">Front-end</p>
           <p class="stack__description">
-            HTML, CSS, JavaScript, React, Web APIs
+            HTML, CSS, JavaScript, <br/> React, Web APIs
           </p>
         </div>
         <div class="stack__item">
-          <i class="fas fa-mobile-alt"></i>
+          <i class="fas fa-mobile-alt stack__image"></i>
           <p class="stack__title">Mobile</p>
           <p class="stack__description">
-            Android, iOS, Flutter, Java, Swift, Kotlin
+            Android, iOS, Flutter, <br/> Java, Swift, Kotlin
           </p>
         </div>
         <div class="stack__item">
-          <i class="fas fa-database"></i>
+          <i class="fas fa-database stack__image"></i>
           <p class="stack__title">Back-end</p>
           <p class="stack__description">
-            Java, JavaScript, NodeJS, Rest APIs, GraphGL
+            Java, JavaScript, NodeJS, <br/> Rest APIs, GraphGL
           </p>
         </div>
       </div>
-      <div class="career">
-        <img src="" alt="" class="career__image">
-        <p class="career__title"></p>
-        <p class="career__date"></p>
+      <div class="about__career">
+        <img src="/img/skku.jpg" alt="skku" class="career__image">
+        <p class="career__name">SKKU Psychology</p>
+        <p class="career__period">~2021</p>
       </div>
-      <div class="career">
-        <img src="" alt="" class="career__image">
-        <p class="career__title"></p>
-        <p class="career__date"></p>
+      <div class="about__career">
+        <img src="/img/skku.jpg" alt="skku" class="career__image">
+        <p class="career__name">SKKU Psychology</p>
+        <p class="career__period">~2021</p>
       </div>
     </section>
 
     <!-- Skills -->
     <section class="skills">
-      <div class="title">
-        <span>Skills</span>
-      </div>
-      <div class="description">
-        <p class="subtitle">Skills & Attributes</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus alias sit rem maiores praesentium ipsa autem quis laudantium accusantium. Dicta fugit tempore quaerat molestiae fugiat reiciendis in voluptatem quasi inventore?</p>
-      </div>
-      <div class="skills__graph">
-        <div class="skills__graph__skills"></div>
-        <div class="skills__graph__tools"></div>
-        <div class="skills__graph__etc"></div>
+      <h1 class="title">Skills</h1>
+      <h2 class="subtitle">Skills & Attributes</h2>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus alias sit rem maiores praesentium ipsa autem quis laudantium accusantium. Dicta fugit tempore quaerat molestiae fugiat reiciendis in voluptatem quasi inventore?
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>99%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>    
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>   
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>React</span>
+              <span>50%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value"></div>
+            </div>        
+          </div>
+        </div>
+
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Atom</span></li>
+              <li><span>Android Studio</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>UX/UI Design</span></li>
+              <li><span>Whatever</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- My Work -->
     <section class="myWork">
-      <div class="title">
-        <span>My Work</span>
+      <h1 class="title">My Work</h1>
+      <h3 class="description">Projects</h3>
+      <div class="myWork__categories">
+        <button class="myWork__category__btn">
+          All <span class="myWork__category__count">8</span>
+        </button>
+        <button class="myWork__category__btn">
+          Front-end <span class="myWork__category__count">3</span>
+        </button>
+        <button class="myWork__category__btn">
+          Back-end <span class="myWork__category__count">3</span>
+        </button>
+        <button class="myWork__category__btn">
+          Mobile <span class="myWork__category__count">2</span>
+        </button>
       </div>
-      <div class="description">
-        <span>Projects</span>
-      </div>
-      <ul class="myWork__category">
-        <div class="myWork__category__list">All</div>
-        <div class="myWork__category__list">Front-end</div>
-        <div class="myWork__category__list">Back-end</div>
-        <div class="myWork__category__list">Mobile</div>
-      </ul>
-      <div class="myWork__category__item">
-        <img src="" alt="" class="myWork__category__image" />
-      </div>
-      <div class="myWork__category__item">
-        <img src="" alt="" class="myWork__category__image" />
-      </div>
-      <div class="myWork__category__item">
-        <img src="" alt="" class="myWork__category__image" />
-      </div>
-      <div class="myWork__category__item">
-        <img src="" alt="" class="myWork__category__image" />
-      </div>
-      <div class="myWork__category__item">
-        <img src="" alt="" class="myWork__category__image" />
-      </div>
-      <div class="myWork__category__item">
-        <img src="" alt="" class="myWork__category__image" />
-      </div>
-      <div class="myWork__category__item">
-        <img src="" alt="" class="myWork__category__image" />
-      </div>
-      <div class="myWork__category__item">
-        <img src="" alt="" class="myWork__category__image" />
+      <div class="myWork__category__box">
+        <a class="myWork__category__item">
+          <img src="/img/project/number1.jpg" alt="" class="myWork__category__image" />
+          <div class="myWork__category__description">
+            <h3>1111</h3>
+            <span>1111</span>
+          </div>
+        </a>
+        <a class="myWork__category__item">
+          <img src="img/project/number2.png" alt="" class="myWork__category__image" />
+          <div class="myWork__category__description">
+            <h3>22222</h3>
+            <span>22222</span>
+          </div>
+        </a>
+        <a class="myWork__category__item">
+          <img src="img/project/number3.png" alt="" class="myWork__category__image" />
+          <div class="myWork__category__description">
+            <h3>3333</h3>
+            <span>3333</span>
+          </div>
+        </a>
+        <a class="myWork__category__item">
+          <img src="img/project/number4.png" alt="" class="myWork__category__image" />
+          <div class="myWork__category__description">
+            <h3>4444</h3>
+            <span>4444</span>
+          </div>
+        </a>
+        <a class="myWork__category__item">
+          <img src="img/project/number5.png" alt="" class="myWork__category__image" />
+          <div class="myWork__category__description">
+            <h3>5555</h3>
+            <span>5555</span>
+          </div>
+        </a>
+        <a class="myWork__category__item">
+          <img src="img/project/number6.png" alt="" class="myWork__category__image" />
+          <div class="myWork__category__description">
+            <h3>66666</h3>
+            <span>6666</span>
+          </div>
+        </a>
+        <a class="myWork__category__item">
+          <img src="img/project/number7.jpg" alt="" class="myWork__category__image" />
+          <div class="myWork__category__description">
+            <h3>7777</h3>
+            <span>7777</span>
+          </div>
+        </a>
+        <a class="myWork__category__item">
+          <img src="img/project/number8.png" alt="" class="myWork__category__image" />
+          <div class="myWork__category__description">
+            <h3>8888</h3>
+            <span>8888</span>
+          </div>
+        </a>
       </div>
     </section>
 
     <!-- Testimonial -->
     <section class="testimonial">
-      <div class="title"></div>
-      <div class="description"></div>
+      <h1 class="title">Testimonials</h1>
+      <h3 class="description">See what they say about me</h3>
       <div class="testiminial__box">
-        <img src="" alt="" class="testimonial__image" />
+        <img src="img/testimonials/people.jpg" alt="" class="testimonial__image" />
         <div class="testimonial__content">
-          <p class="testimonial__writing"></p>
-          <p class="testimonial__author"></p>
+          <p class="testimonial__writing">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere cumque sit voluptates consequatur, eum rerum quaerat minus repudiandae doloribus animi ea nisi, commodi dolore magni, laboriosam est reiciendis. Assumenda, expedita.</p>
+          <p class="testimonial__author"><a href="#">Pereng</a></p>
         </div>
       </div>
       <div class="testiminial__box">
-        <img src="" alt="" class="testimonial__image" />
+        <img src="/img/testimonials/people.jpg" alt="" class="testimonial__image" />
         <div class="testimonial__content">
-          <p class="testimonial__writing"></p>
-          <p class="testimonial__author"></p>
+          <p class="testimonial__writing">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere cumque sit voluptates consequatur, eum rerum quaerat minus repudiandae doloribus animi ea nisi, commodi dolore magni, laboriosam est reiciendis. Assumenda, expedita.</p>
+          <p class="testimonial__author"><a href="#">Pereng</a></p>
         </div>
       </div>
     </section>
 
     <!-- footer -->
-    <footer class="footer">
-      <div class="title"></div>
-      <a class="address"></a>
-      <ul class="footer__link">
-        <li class="footer__link__item"></li>
-        <li class="footer__link__item"></li>
-      </ul>
+    <footer class="contact">
+      <h1 class="title">Let's Talk!</h1>
+      <h2 class="address">nardi0302@gmail.com</h2>
+      <div class="contact__link">
+        <a class="contact__link__item" href="https://github.com/pereng11" target="blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="contact__link__item" href="https://www.youtube.com/channel/UCkT9UidZqcZPI81YXaecxdA" target="blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
       <p class="owner">2021 Dream Coding Pereng - All rights reserved</p>
     </footer>
   </body>
