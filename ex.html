@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			:root {
+				--font-size: 32px;
+				--background-color: lavenderblush;
+				--text-color: lightgreen;
+				--base-space: 20px;
+			}
+			.first-list {
+				background-color: var(--background-color);
+				color: var(--text-color);
+				margin-left: var(--base-space);
+				font-size: var(--font-size);
+			}
+			.second-list {
+				background-color: var(--background-color);
+				color: var(--text-color);
+				margin-left: calc(var(--base-space) * 3);
+				font-size: calc(var(--font-size) * 2);
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="first-list">
+			<li>Orange</li>
+			<li>Apple</li>
+		</ul>
+		<ul class="second-list">
+			<li>Korea</li>
+			<li>Dominica</li>
+			<li>Sweden</li>
+		</ul>
+	</body>
+</html>
