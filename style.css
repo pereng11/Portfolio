@@ -29,6 +29,10 @@
 
 	/* size */
 	--size-border-radius: 4px;
+	--size-padding-section: 40px;
+
+	/* Animation */
+	--animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -133,9 +137,11 @@ button {
 	background-color: var(--color-dark-purple);
 }
 
+/* Home */
+
 .home {
 	background: url("img/home-background.png") center/cover no-repeat;
-	padding: 40px;
+	padding: var(--size-padding-section);
 	text-align: center;
 }
 
@@ -159,4 +165,70 @@ h2 {
 	padding: 8px 12px;
 	border: 2px solid var(--color-white);
 	border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+
+.section {
+	text-align: center;
+	padding: var(--size-padding-section);
+	max-width: 1200px;
+	margin: auto;
+}
+
+/* About */
+
+.about__stack {
+	display: flex;
+	justify-content: space-between;
+	margin: 80px 0 40px 0;
+}
+
+.stack__image {
+	color: var(--color-blue);
+	width: 170px;
+	height: 170px;
+	font-size: 70px;
+	line-height: 170px;
+	border: 2px solid;
+	border-radius: 50%;
+	margin-bottom: 16px;
+}
+
+.stack__image:hover i {
+	color: var(--color-purple);
+	transform: rotate(30deg) scale(1.1);
+}
+
+.stack__image i {
+	transition: all var(--animation-duration) ease;
+}
+
+.stack__title,
+.stack__description {
+	color: var(--color-dark-grey);
+}
+
+.stack__description {
+	font-size: var(--font-small);
+}
+
+.about__career {
+	display: flex;
+	align-items: center;
+}
+
+.career__image {
+	width: 200px;
+	height: 80px;
+}
+
+.career__description {
+	text-align: left;
+}
+
+.career__name,
+.career__period {
+	color: var(--color-light-grey);
+	font-size: var(--font-small);
 }
