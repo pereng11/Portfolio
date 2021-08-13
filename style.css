@@ -5,8 +5,8 @@
 	--color-white: #ffffff;
 	--color-light-white: #eeeeee;
 	--color-dark-white: #bdbdbd;
-	--color-pink: #fe918d;
-	--color-dark-pink: #ff6863;
+	--color-purple: #e2c8f8;
+	--color-dark-purple: #bb7def;
 	--color-dark-grey: #4d4d4d;
 	--color-grey: #616161;
 	--color-light-grey: #7c7979;
@@ -26,6 +26,9 @@
 	--weight-bold: 700;
 	--weight-semi-bold: 600;
 	--weight-regular: 400;
+
+	/* size */
+	--size-border-radius: 4px;
 }
 
 /* Universal tags */
@@ -34,6 +37,13 @@
 }
 
 /* Typography */
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	cursor: default;
+}
 
 h1 {
 	font-size: var(--font-large);
@@ -61,4 +71,92 @@ p {
 	font-weight: var(--weight-regular);
 	color: var(--color-black);
 	margin: 4px 0;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-white);
+}
+
+button {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+/* Nav */
+
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-purple);
+	padding: 8px;
+}
+
+.navBar__logo {
+	font-size: var(--font-medium);
+	font-weight: var(--weight-semi-bold);
+	display: flex;
+	align-items: center;
+}
+
+#navBar__image {
+	width: var(--font-medium);
+	height: var(--font-medium);
+	margin-right: 8px;
+}
+
+.navBar__menu {
+	display: flex;
+	color: var(--color-white);
+}
+
+.navBar__menu__item {
+	padding: 8px 12px;
+	margin: 0px 4px;
+	cursor: pointer;
+	border-radius: var(--size-border-radius);
+}
+
+.navBar__menu__item.active {
+	border: solid var(--color-white) 1px;
+}
+
+.navBar__menu__item:hover {
+	background-color: var(--color-dark-purple);
+}
+
+.home {
+	background: url("img/home-background.png") center/cover no-repeat;
+	padding: 40px;
+	text-align: center;
+}
+
+.home__image {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 2px solid var(--color-light-white);
+}
+
+.home h1,
+h2 {
+	color: var(--color-white);
+}
+
+.home__button {
+	color: var(--color-white);
+	font-size: var(--font-regular);
+	font-weight: var(--weight-bold);
+	margin: 24px;
+	padding: 8px 12px;
+	border: 2px solid var(--color-white);
+	border-radius: var(--size-border-radius);
 }
