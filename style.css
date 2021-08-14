@@ -153,7 +153,7 @@ button {
 }
 
 .home h1,
-h2 {
+.home h2 {
 	color: var(--color-white);
 }
 
@@ -172,8 +172,13 @@ h2 {
 .section {
 	text-align: center;
 	padding: var(--size-padding-section);
-	max-width: 1200px;
 	margin: auto;
+}
+
+.section__container {
+	margin: auto;
+	text-align: center;
+	max-width: 1200px;
 }
 
 /* About */
@@ -231,4 +236,59 @@ h2 {
 .career__period {
 	color: var(--color-light-grey);
 	font-size: var(--font-small);
+}
+
+/* Skill */
+
+.skills {
+	background-color: var(--color-yellow);
+	color: var(--color-light-white);
+}
+
+.skills h3 {
+	margin-top: 0;
+	color: var(--color-white);
+}
+.skillset {
+	display: flex;
+	background-color: var(--color-light-grey);
+	margin: 20px 0;
+}
+
+.skillset__left {
+	background-color: var(--color-dark-grey);
+	flex-basis: 60%;
+	padding: 20px 40px;
+}
+
+.skill {
+	margin-bottom: 20px;
+}
+
+.skill__description {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skill__bar {
+	background-color: var(--color-grey);
+	height: 4px;
+}
+
+.skill__value {
+	background-color: var(--color-orange);
+	height: 100%;
+}
+
+.skillset__right {
+	flex-basis: 40%;
+}
+
+.tools {
+	background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+	padding: 20px;
 }
