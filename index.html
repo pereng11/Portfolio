@@ -25,34 +25,38 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="navBar">
+    <nav class="navBar ">
       <div class="navBar__logo">
         <img id="navBar__image" src="/img/favicon.png" alt="">
         <a href="#">Pereng</a>
       </div>
-      <div class="navBar__menu">  
-        <ul class="navBar__menu">
-          <li class="navBar__menu__item active">Home</li>
-          <li class="navBar__menu__item">About</li>
-          <li class="navBar__menu__item">Skills</li>
-          <li class="navBar__menu__item">My Work</li>
-          <li class="navBar__menu__item">Testimonial</li>
-          <li class="navBar__menu__item">Contact</li>
-        </ul>
-      </div>
-
+      <ul class="navBar__menu hidden__small">
+        <li class="navBar__menu__item" data-link=".home" data-type="button">Home</li>
+        <li class="navBar__menu__item" data-link=".about" data-type="button">About</li>
+        <li class="navBar__menu__item" data-link=".skills" data-type="button">Skills</li>
+        <li class="navBar__menu__item" data-link=".myWork" data-type="button">My Work</li>
+        <li class="navBar__menu__item" data-link=".testimonial" data-type="button">Testimonial</li>
+        <li class="navBar__menu__item" data-link=".contact" data-type="button">Contact</li>
+      </ul>
     <!-- nav toggle -->
       <div class="nav__toggle__btn">
         <i class="fas fa-bars"></i>
       </div>
     </nav>
 
+    <!-- fixed button -->
+    <button class="arrow-up" data-link=".home">
+        <i class="fas fa-arrow-up" data-link=".home"></i>
+    </button>
+
     <!-- home -->
     <section class="home">
-      <img class="home__image" src="img/favicon.png" alt="navBar Logo"></img>
-      <h1 class="title">Hello, <br/> I'm Dream Coder</h1>
-      <h2 class="description">A Front-end Developer in Seoul<h2/>
-      <button class="home__button">CONTACT ME</button>
+      <div class="home__container">
+        <img class="home__image" src="img/favicon.png" alt="navBar Logo"></img>
+        <h1 class="title">Hello, <br/> I'm Dream Coder</h1>
+        <h2 class="description">A Front-end Developer in Seoul<h2/>
+        <button class="home__button" data-link=".contact">CONTACT ME</button>
+      </div>
     </section>
 
     <!-- About Me -->
@@ -185,70 +189,70 @@
         <h1 class="title">My Work</h1>
         <h3 class="description">Projects</h2>
         <div class="myWork__categories">
-          <button class="myWork__category__btn active">
+          <button class="myWork__category__btn active" data-sort="*" data-type="button">
             All <span class="myWork__category__count">8</span>
           </button>
-          <button class="myWork__category__btn">
+          <button class="myWork__category__btn" data-sort="front-end" data-type="button">
             Front-end <span class="myWork__category__count">3</span>
           </button>
-          <button class="myWork__category__btn">
+          <button class="myWork__category__btn" data-sort="back-end" data-type="button">
             Back-end <span class="myWork__category__count">3</span>
           </button>
-          <button class="myWork__category__btn">
+          <button class="myWork__category__btn" data-sort="mobile" data-type="button">
             Mobile <span class="myWork__category__count">2</span>
           </button>
         </div>
         <div class="myWork__category__box">
-          <a class="myWork__category__item">
+          <a class="myWork__category__item work__item__front-end" data-type="front-end">
             <img src="/img/project/project1.png" alt="" class="myWork__category__image" />
             <div class="myWork__category__description">
               <h3>1111</h3>
               <span>1111</span>
             </div>
           </a>
-          <a class="myWork__category__item">
+          <a class="myWork__category__item work__item__front-end" data-type="front-end">
             <img src="img/project/project2.png" alt="" class="myWork__category__image" />
             <div class="myWork__category__description">
               <h3>22222</h3>
               <span>22222</span>
             </div>
           </a>
-          <a class="myWork__category__item">
+          <a class="myWork__category__item work__item__front-end" data-type="front-end">
             <img src="img/project/project3.png" alt="" class="myWork__category__image" />
             <div class="myWork__category__description">
               <h3>3333</h3>
               <span>3333</span>
             </div>
           </a>
-          <a class="myWork__category__item">
+          <a class="myWork__category__item work__item__back-end" data-type="back-end">
             <img src="img/project/project4.png" alt="" class="myWork__category__image" />
             <div class="myWork__category__description">
               <h3>4444</h3>
               <span>4444</span>
             </div>
           </a>
-          <a class="myWork__category__item">
+          <a class="myWork__category__item work__item__back-end" data-type="back-end">
             <img src="img/project/project5.png" alt="" class="myWork__category__image" />
             <div class="myWork__category__description">
               <h3>5555</h3>
               <span>5555</span>
             </div>
           </a>
-          <a class="myWork__category__item">
+          <a class="myWork__category__item work__item__back-end" data-type="back-end">
             <img src="img/project/project6.png" alt="" class="myWork__category__image" />
             <div class="myWork__category__description">
               <h3>66666</h3>
               <span>6666</span>
             </div>
           </a>
-          <a class="myWork__category__item">
+          <a class="myWork__category__item work__item__mobile" data-type="mobile">
             <img src="img/project/project7.png" alt="" class="myWork__category__image" />
             <div class="myWork__category__description">
               <h3>7777</h3>
               <span>7777</span>
             </div>
           </a>
-          <a class="myWork__category__item">
+          <a class="myWork__category__item work__item__mobile" data-type="mobile">
             <img src="img/project/project8.png" alt="" class="myWork__category__image" />
             <div class="myWork__category__description">
               <h3>8888</h3>
