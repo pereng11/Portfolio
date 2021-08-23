@@ -140,6 +140,7 @@ button {
 	padding: 8px 12px;
 	margin: 0px 4px;
 	cursor: pointer;
+	border: solid 1px transparent;
 	border-radius: var(--size-border-radius);
 	transition: all var(--animation-duration) ease-in-out;
 }
@@ -150,7 +151,7 @@ button {
 }
 
 .navBar__menu__item.active {
-	border: solid 1px var(--color-white);
+	border-color: var(--color-white);
 	border-radius: var(--size-border-radius);
 }
 
@@ -158,16 +159,16 @@ button {
 
 .nav__toggle__btn {
 	position: absolute;
-	right: 32px;
-	top: 12px;
-	font-size: 24px;
+	right: 24px;
+	top: 10px;
+	font-size: 20px;
 	color: var(--color-white);
 	display: none;
 }
 
 /* Home */
 
-.home {
+#home {
 	background: url("img/home-background.png") center/cover no-repeat;
 	padding: var(--size-padding-section);
 	padding-top: 100px;
@@ -182,8 +183,8 @@ button {
 	border: 2px solid var(--color-light-white);
 }
 
-.home h1,
-.home h2 {
+#home h1,
+#home h2 {
 	color: var(--color-white);
 }
 
@@ -278,12 +279,12 @@ button {
 
 /* Skill */
 
-.skills {
+#skills {
 	background-color: var(--color-yellow);
 	color: var(--color-light-white);
 }
 
-.skills h3 {
+#skills h3 {
 	margin-top: 0;
 	color: var(--color-white);
 }
@@ -338,6 +339,7 @@ button {
 }
 
 .myWork__category__btn {
+	position: relative;
 	border: 1px solid var(--color-dark-white);
 	border-radius: var(--size-border-radius);
 	font-size: var(--font-regular);
@@ -354,21 +356,21 @@ button {
 .myWork__category__btn.active .myWork__category__count,
 .myWork__category__btn:hover .myWork__category__count {
 	opacity: 1;
-	top: 0;
+	top: 5px;
 }
 
 .myWork__category__count {
+	position: absolute;
+	top: 0;
+	right: 10%;
 	background-color: var(--color-orange);
 	color: var(--color-white);
 	border: 1px solid var(--color-orange);
 	border-radius: 50%;
 	width: 24px;
 	height: 24px;
-	line-height: 25px;
+	line-height: 23px;
 	display: inline-block;
-	position: relative;
-	top: -20px;
-	left: 4px;
 	opacity: 0;
 	transition: all var(--animation-duration) ease-in;
 }
@@ -438,11 +440,11 @@ button {
 
 /* Testimonials */
 
-.testimonial {
+#testimonial {
 	background-color: var(--color-light-white);
 }
 
-.testiminial__box {
+.testimonial__box {
 	display: flex;
 	justify-content: space-between;
 	margin: 40px 0;
@@ -464,16 +466,16 @@ button {
 }
 
 .testimonial__image:nth-child(odd) {
-	margin-right: 40px;
+	margin-right: 20px;
 }
 
 .testimonial__image:nth-child(even) {
-	margin-left: 40px;
+	margin-left: 20px;
 }
 
 .testimonial__writing {
 	color: var(--color-light-grey);
-	margin: 0 40px;
+	/* margin: 0 10px; */
 }
 
 .testimonial__author {
@@ -487,13 +489,13 @@ button {
 
 /* Contact */
 
-.contact {
+#contact {
 	background-color: var(--color-dark-purple);
 }
 
-.contact .title,
-.contact .address,
-.contact .owner {
+#contact .title,
+#contact .address,
+#contact .owner {
 	color: var(--color-white);
 	padding: 10px 0;
 }
@@ -508,52 +510,7 @@ button {
 	transition: all var(--animation-duration) ease-in-out;
 }
 
-/* Responsive */
-
-@media screen and (max-width: 768px) {
-	.hidden__small {
-		opacity: 0;
-		display: none;
-	}
-
-	.nav__toggle__btn {
-		display: block;
-	}
-
-	.navBar {
-		flex-direction: column;
-		align-items: flex-start;
-		padding: 10px 0;
-	}
-
-	.navBar__menu {
-		flex-direction: column;
-		text-align: center;
-		width: 100%;
-		transition: all 3s ease-in-out;
-	}
-
-	.about__stack {
-		flex-direction: column;
-	}
-
-	.stack__item {
-		margin-bottom: 38px;
-	}
-
-	.skillset {
-		flex-direction: column;
-	}
-
-	.myWork__category__item {
-		flex-grow: 1;
-	}
-
-	.testimonial__image {
-		width: 100px;
-		height: 100px;
-	}
-}
+/* Fixed Button */
 
 .arrow-up {
 	position: fixed;
@@ -575,6 +532,107 @@ button {
 .arrow-up__scroll {
 	opacity: 1;
 	pointer-events: auto;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+	:root {
+		/* Font size */
+		--font-large: 30px;
+		--font-medium: 18px;
+		--font-regular: 16px;
+		--font-small: 14px;
+		--font-micro: 12px;
+
+		/* Font weight */
+		--weight-bold: 700;
+		--weight-semi-bold: 600;
+		--weight-regular: 400;
+
+		/* size */
+		--size-border-radius: 4px;
+		--size-padding-section: 40px;
+	}
+
+	/* Global */
+	.section {
+		padding-top: 40px;
+	}
+
+	.hidden__small {
+		opacity: 0;
+		display: none;
+	}
+
+	/* -------------- */
+
+	.nav__toggle__btn {
+		display: block;
+	}
+
+	.navBar {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px 0;
+	}
+
+	.navBar__menu {
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+		transition: all 3s ease-in-out;
+	}
+
+	.about__stack {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.stack__item {
+		margin-bottom: 38px;
+	}
+
+	.skillset {
+		flex-direction: column;
+	}
+
+	.myWork__category__item {
+		flex-grow: 1;
+	}
+
+	.testimonial__box {
+		margin-bottom: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.testimonial__image {
+		width: 100px;
+		height: 100px;
+	}
+
+	.testimonial__image:nth-child(odd),
+	.testimonial__image:nth-child(even) {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+
+	.testimonial__content {
+		order: 1;
+	}
+
+	#contact * {
+		margin: 0;
+	}
+
+	.arrow-up {
+		width: 40px;
+		height: 40px;
+		font-size: 30px;
+		right: 25px;
+		bottom: 25px;
+	}
 }
 
 /* etc */

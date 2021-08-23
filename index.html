@@ -31,12 +31,12 @@
         <a href="#">Pereng</a>
       </div>
       <ul class="navBar__menu hidden__small">
-        <li class="navBar__menu__item" data-link=".home" data-type="button">Home</li>
-        <li class="navBar__menu__item" data-link=".about" data-type="button">About</li>
-        <li class="navBar__menu__item" data-link=".skills" data-type="button">Skills</li>
-        <li class="navBar__menu__item" data-link=".myWork" data-type="button">My Work</li>
-        <li class="navBar__menu__item" data-link=".testimonial" data-type="button">Testimonial</li>
-        <li class="navBar__menu__item" data-link=".contact" data-type="button">Contact</li>
+        <li id="home-menu"class="navBar__menu__item" data-link="#home" data-type="button">Home</li>
+        <li id="about-menu"class="navBar__menu__item" data-link="#about" data-type="button">About</li>
+        <li id="skills-menu"class="navBar__menu__item" data-link="#skills" data-type="button">Skills</li>
+        <li id="myWork-menu"class="navBar__menu__item" data-link="#myWork" data-type="button">My Work</li>
+        <li id="testimonial-menu"class="navBar__menu__item" data-link="#testimonial" data-type="button">Testimonial</li>
+        <li id="contact-menu"class="navBar__menu__item" data-link="#contact" data-type="button">Contact</li>
       </ul>
     <!-- nav toggle -->
       <div class="nav__toggle__btn">
@@ -45,22 +45,22 @@
     </nav>
 
     <!-- fixed button -->
-    <button class="arrow-up" data-link=".home">
-        <i class="fas fa-arrow-up" data-link=".home"></i>
+    <button class="arrow-up" data-link="#home">
+        <i class="fas fa-arrow-up" data-link="#home"></i>
     </button>
 
     <!-- home -->
-    <section class="home">
+    <section id="home" class="section" data-link="#home-menu">
       <div class="home__container">
         <img class="home__image" src="img/favicon.png" alt="navBar Logo"></img>
         <h1 class="title">Hello, <br/> I'm Dream Coder</h1>
         <h2 class="description">A Front-end Developer in Seoul<h2/>
-        <button class="home__button" data-link=".contact">CONTACT ME</button>
+        <button class="home__button" data-link="#contact">CONTACT ME</button>
       </div>
     </section>
 
     <!-- About Me -->
-    <section class="about section">
+    <section id="about" class="section" data-link="#about-menu">
       <div class="section__container">
         <h1 class="title">About Me<h1/>
         <p class="description">
@@ -113,7 +113,7 @@
     </section>
 
     <!-- Skills -->
-    <section class="skills section">
+    <section id="skills" class="section" data-link="#skills-menu">
       <div class="section__container">
         <h1 class="title">Skills</h1>
         <h2 class="subtitle">Skills & Attributes</h2>
@@ -184,7 +184,7 @@
     </section>
 
     <!-- My Work -->
-    <section class="myWork section">
+    <section id="myWork" class="section" data-link="#myWork-menu">
       <div class="section__container">
         <h1 class="title">My Work</h1>
         <h3 class="description">Projects</h2>
@@ -264,18 +264,18 @@
     </section>
 
     <!-- Testimonial -->
-    <section class="testimonial section">
+    <section id="testimonial" class="section" data-link="#testimonial-menu">
       <div class="section__container">
         <h1 class="title">Testimonials</h1>
         <h3 class="description">See what they say about me</h3>
-        <div class="testiminial__box">
+        <div class="testimonial__box">
           <img src="img/testimonials/people.jpg" alt="" class="testimonial__image" />
           <div class="testimonial__content">
             <p class="testimonial__writing">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere cumque sit voluptates consequatur, eum rerum quaerat minus repudiandae doloribus animi ea nisi, commodi dolore magni, laboriosam est reiciendis. Assumenda, expedita.</p>
             <p class="testimonial__author"><a href="#">Pereng</a> / Manlidong bulgama</p>
           </div>
         </div>
-        <div class="testiminial__box">
+        <div class="testimonial__box">
           <div class="testimonial__content">
             <p class="testimonial__writing">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere cumque sit voluptates consequatur, eum rerum quaerat minus repudiandae doloribus animi ea nisi, commodi dolore magni, laboriosam est reiciendis. Assumenda, expedita.</p>
             <p class="testimonial__author"><a href="#">Pereng</a> / Manlidong bulgama</p>
@@ -286,7 +286,7 @@
     </section>
 
     <!-- footer -->
-    <footer class="contact section">
+    <footer id="contact" class="section" data-link="#contact-menu">
       <h1 class="title">Let's Talk!</h1>
       <h2 class="address">nardi0302@gmail.com</h2>
       <div class="contact__link">
